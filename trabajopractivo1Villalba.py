@@ -33,7 +33,7 @@ print(f"{segund} es igual a {hora} horas")
 
 
 numero_tabla: int = int(input("Indique un numero para ver su tabla de multiplicar: "))
-resultado = numero_tabla * 1
+resultado: int = numero_tabla * 1
 print(f"{numero_tabla} * 1 es igual a {resultado}")
 resultado = numero_tabla * 2
 print(f"{numero_tabla} * 2 es igual a {resultado}")
@@ -87,4 +87,5 @@ numero2: float = float(input("Indique el segundo numero: "))
 numero3: float = float(input("Indique el tercero: "))
 promedio: float = (numero1 + numero2 + numero3) / 3
 
-print(f"El promedio entre {numero1}, {numero2} y {numero3} es: {promedio}")
+print(f"El promedio entre los numeros {numero1}, {numero2} y {numero3} es: {promedio}")
+
