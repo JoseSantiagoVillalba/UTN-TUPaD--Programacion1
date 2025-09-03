@@ -112,7 +112,7 @@ cont_pos: int = 0
 cont_neg: int = 0
 
 
-for i5 in range (0, 1, 1):
+for i5 in range (0, 100, 1):
     numero:int = int(input("Ingrese un numero para saber su estado: "))
 
     if numero%2 == 0 :
@@ -136,13 +136,22 @@ print(f"Hay {cont_par} numeros pares, {cont_impar} impares, {cont_pos} positivos
 
 contador5: int = 0
 media: float = 0
-for i6 in range (0, 5, 1):
+for i6 in range (0, 100, 1):
     numero4: int = int(input("Ingrese un numero entero para ver la media:"))
     contador5 = contador5 + numero4
-media = contador5 / 5
+media = contador5 / 100
 
 print(media)
 
-"""10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el 
-usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745."""
+#10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el 
+#usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745."""
 
+numero = int(input("Ingresa un número: "))
+numero_invertido = 0
+
+while numero > 0:
+    digito = numero % 10
+    numero_invertido = numero_invertido * 10 + digito
+    numero //= 10
+
+print("Número invertido:", numero_invertido)
