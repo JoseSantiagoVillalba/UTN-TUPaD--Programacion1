@@ -1,5 +1,11 @@
 #1) Crear una lista con los números del 1 al 100 que sean múltiplos de 4. Utilizar la función
 #range.
+listaA:list = ["A", 5, 8]
+listaB:list = [1, 5, "PATO"]
+
+listaC:list = listaA + listaB
+print(listaC)
+
 print("----------------------------------------")
 
 print("punto 1")
